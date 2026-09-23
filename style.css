@@ -1,6 +1,5 @@
-/* Faelles, enkel stil til TaktWorks offentlige sider. Ingen JavaScript, ingen eksterne
-   skrifttyper eller CDN'er. Systemfont, mobil foerst, og farver der virker i baade lys
-   og moerk tilstand. */
+/* Shared, simple style for TaktWork's public pages. No JavaScript, no external fonts or
+   CDNs. System font, mobile first, colours that work in both light and dark mode. */
 
 :root {
   color-scheme: light dark;
@@ -26,7 +25,7 @@
 }
 
 html {
-  /* Respekter brugerens egen skriftstoerrelse i stedet for at laase den. */
+  /* Respect the reader's own font size instead of locking it. */
   font-size: 100%;
 }
 
