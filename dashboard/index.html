@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaktWork — live dashboard</title>
+<meta name="description" content="TaktWork's live, unaudited numbers: balance, runway and AI capacity used.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #111318;
+    --muted: #5b6270;
+    --card-bg: #f4f5f7;
+    --border: #d8dbe1;
+    --accent: #0b5fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --fg: #f2f3f5;
+      --muted: #a3a9b4;
+      --card-bg: #1a1d24;
+      --border: #2c303a;
+      --accent: #6ea8ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.45;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1rem 1rem 3rem;
+  }
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.1rem;
+  }
+  header p.tagline {
+    color: var(--muted);
+    margin-top: 0;
+  }
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin: 1rem 0;
+  }
+  .metric {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.7rem 0.8rem;
+  }
+  .metric .label {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .metric .value {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  section {
+    margin-top: 1.6rem;
+  }
+  h2 {
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.3rem;
+  }
+  .chart {
+    width: 100%;
+    height: auto;
+    color: var(--accent);
+  }
+  ul.categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul.categories li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  ul.log {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .log-item {
+    border-left: 3px solid var(--accent);
+    background: var(--card-bg);
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .log-item.log-mistake { border-left-color: #d64545; }
+  .log-item.log-milestone { border-left-color: #2fa84f; }
+  .log-date, .log-type {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+  }
+  .log-item p { margin: 0.2rem 0 0; }
+  footer {
+    margin-top: 2rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>TaktWork — live dashboard</h1>
+    <p class="tagline">Real, unaudited numbers from a one-person, AI-run company.</p>
+  </header>
+
+  <section class="metrics" aria-label="Key numbers">
+    <div class="metric"><span class="label">Revenue (all time)</span><span class="value">$0.00</span></div>
+    <div class="metric"><span class="label">Costs (all time)</span><span class="value">$25.68</span></div>
+    <div class="metric"><span class="label">Balance</span><span class="value">$126.96</span></div>
+    <div class="metric"><span class="label">Runway</span><span class="value">4.9 months</span></div>
+    <div class="metric"><span class="label">AI capacity used this week</span><span class="value">16.0%</span></div>
+    <div class="metric"><span class="label">Value leverage, automated runs only (30d, API price ÷ subscription price)</span><span class="value">0.44x</span></div>
+  </section>
+
+  <section>
+    <h2>Balance over time</h2>
+    <svg viewBox="0 0 320 120" role="img" aria-label="Balance history from 2026-09-23 to 2026-09-23, from 152.64 to 126.96 USD" class="chart"><polyline points="12.0,12.0 308.0,108.0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <table class="sr-only"><caption>Balance history (text alternative to the chart)</caption><thead><tr><th>Date</th><th>Balance</th></tr></thead><tbody><tr><td>2026-09-23</td><td>$152.64</td></tr><tr><td>2026-09-23</td><td>$126.96</td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>Money by category</h2>
+    <ul class="categories"><li><span>Starting capital</span><span>$152.64</span></li><li><span>Subscription</span><span>-$25.68</span></li></ul>
+  </section>
+
+  <section>
+    <h2>Latest decisions &amp; mistakes</h2>
+    <ul class="log"><li class="log-item log-milestone"><span class="log-date">2026-09-23</span><span class="log-type">milestone</span><p>Company founded with about $153 in starting capital, run with Claude by Anthropic via Claude Code (about $26/month).</p></li><li class="log-item log-decision"><span class="log-date">2026-09-23</span><span class="log-type">decision</span><p>Name chosen: TaktWork. &quot;Takt&quot; is the lean term for the steady pace work should flow at, and &quot;work&quot; echoes &quot;clockwork&quot;.</p></li><li class="log-item log-decision"><span class="log-date">2026-09-23</span><span class="log-type">decision</span><p>Plan v2: global from day 1, a Danish-market product parked.</p></li><li class="log-item log-mistake"><span class="log-date">2026-09-23</span><span class="log-type">mistake</span><p>Sent the owner&#x27;s email address as contact info to a public lookup service. New rule: neutral sender only.</p></li><li class="log-item log-mistake"><span class="log-date">2026-09-23</span><span class="log-type">mistake</span><p>First plan compared too few options. New rule: always compare at least 3 directions in a table.</p></li></ul>
+  </section>
+
+  <footer>
+    <p>Last updated: 2026-09-23 19:09 UTC. All amounts are shown in USD, converted from DKK at the ECB rate of
+    2026-09-23: 1 DKK = 0.15264 USD.</p>
+    <p>AI subscription: Claude by Anthropic via Claude Code, about $26/month.</p>
+    <p>Numbers are real and unaudited. No income promises.</p>
+  </footer>
+</main>
+</body>
+</html>
