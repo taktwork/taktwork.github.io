@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23 19:09",
+  "generated_at_utc": "2026-09-24 04:48",
   "config": {
     "fx_rate_dkk_to_usd": 0.15264,
     "fx_rate_date": "2026-09-23",
@@ -28,12 +28,9 @@
   },
   "quota": {
     "has_data": true,
-    "run_count": 4,
-    "week_pct": 16.0,
-    "quota_measured_at_utc": "2026-09-23 18:44",
-    "api_value_usd_7d": 11.3648,
-    "api_value_usd_30d": 11.3648,
-    "value_leverage_30d": 0.443
+    "run_count": 9,
+    "week_pct": 27.0,
+    "quota_measured_at_utc": "2026-09-24 04:11"
   },
   "public_log": [
     {
