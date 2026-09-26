@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-26 09:05",
+  "generated_at_utc": "2026-09-26 14:08",
   "config": {
     "fx_rate_dkk_to_usd": 0.15254,
     "fx_rate_date": "2026-09-25",
@@ -54,9 +54,9 @@
   ],
   "ai_capacity": {
     "has_data": true,
-    "run_count": 19,
-    "week_pct": 10,
+    "run_count": 20,
+    "week_pct": 19,
     "week_status": "measured",
-    "quota_measured_at_utc": "2026-09-26 07:26"
+    "quota_measured_at_utc": "2026-09-26 09:14"
   }
 }
