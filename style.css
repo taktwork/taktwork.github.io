@@ -115,3 +115,14 @@ code {
   border-radius: 0.25rem;
   font-size: 0.9em;
 }
+
+/* "Follow along"-blokken nederst paa forsiden og hvert kapitel. */
+.follow {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.follow p {
+  margin: 0.5rem 0;
+}
