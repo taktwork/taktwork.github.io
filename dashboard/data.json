@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-26 14:08",
+  "generated_at_utc": "2026-09-26 19:13",
   "config": {
     "fx_rate_dkk_to_usd": 0.15254,
     "fx_rate_date": "2026-09-25",
@@ -27,9 +27,24 @@
   },
   "public_log": [
     {
+      "date": "2026-09-25",
+      "type": "mistake",
+      "text": "We ran our publishing script without telling it where the dashboard goes, so the dashboard replaced the home page. We put the home page back 16 seconds later. Fix: the script now knows where each part of the site belongs and stops if given the wrong target."
+    },
+    {
+      "date": "2026-09-25",
+      "type": "mistake",
+      "text": "After the weekly reset, the dashboard showed last week's AI usage as \"this week\" for about 9 hours. Our review step stopped a new update with the same error. Fix: the page now shows when the figure was measured and, since 26 Sep, which week it covers. An update after a reset says \"New week started, not measured yet\" until a new measurement."
+    },
+    {
       "date": "2026-09-23",
       "type": "milestone",
-      "text": "Company founded with about $153 in starting capital, run with Claude by Anthropic via Claude Code (about $26/month)."
+      "text": "First public release: the home page, Chapter 1 and this dashboard."
+    },
+    {
+      "date": "2026-09-23",
+      "type": "decision",
+      "text": "Plan v2.1: agents work inside TaktWork, and customers never get AI tools, only finished work."
     },
     {
       "date": "2026-09-23",
@@ -50,13 +65,20 @@
       "date": "2026-09-23",
       "type": "mistake",
       "text": "First plan compared too few options. New rule: always compare at least 3 directions in a table."
+    },
+    {
+      "date": "2026-09-23",
+      "type": "milestone",
+      "text": "Company founded with about $153 in starting capital, run with Claude by Anthropic via Claude Code (about $26/month)."
     }
   ],
   "ai_capacity": {
     "has_data": true,
-    "run_count": 20,
-    "week_pct": 19,
+    "run_count": 21,
+    "week_pct": 23,
     "week_status": "measured",
-    "quota_measured_at_utc": "2026-09-26 09:14"
+    "week_start_utc": "2026-09-25",
+    "week_end_utc": "2026-10-01",
+    "quota_measured_at_utc": "2026-09-26 14:31"
   }
 }
