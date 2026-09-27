@@ -126,3 +126,14 @@ code {
 .follow p {
   margin: 0.5rem 0;
 }
+
+/* Navigation efter et kapitels broedtekst: link til naeste kapitel og dashboard. */
+.chapter-nav {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.chapter-nav p {
+  margin: 0.5rem 0;
+}
