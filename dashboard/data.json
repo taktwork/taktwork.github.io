@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-09-29 04:05",
+  "generated_at_utc": "2026-09-30 04:05",
   "config": {
-    "fx_rate_dkk_to_usd": 0.15221,
-    "fx_rate_date": "2026-09-28",
+    "fx_rate_dkk_to_usd": 0.1519,
+    "fx_rate_date": "2026-09-29",
     "company_start_date": "2026-09-23"
   },
   "economy": {
-    "balance_usd": 126.61,
+    "balance_usd": 126.35,
     "revenue_usd": 0.0,
-    "costs_usd": 25.6,
+    "costs_usd": 25.55,
     "by_category": {
-      "Starting capital": 152.21,
-      "Subscription": -25.6
+      "Starting capital": 151.9,
+      "Subscription": -25.55
     },
     "balance_history": [
       {
         "date": "2026-09-23",
-        "balance_usd": 152.21
+        "balance_usd": 151.9
       },
       {
         "date": "2026-09-23",
-        "balance_usd": 126.61
+        "balance_usd": 126.35
       }
     ],
     "runway_months": 4.9
@@ -74,11 +74,11 @@
   ],
   "ai_capacity": {
     "has_data": true,
-    "run_count": 33,
-    "week_pct": 51,
+    "run_count": 38,
+    "week_pct": 61,
     "week_status": "measured",
     "week_start_utc": "2026-09-25",
     "week_end_utc": "2026-10-01",
-    "quota_measured_at_utc": "2026-09-28 19:39"
+    "quota_measured_at_utc": "2026-09-29 19:27"
   }
 }
